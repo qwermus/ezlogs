@@ -65,7 +65,7 @@
                 <div class="form-group">
                     {!! Form::label('address', __('test.address')) !!}
                     <p>{{ __('test.address_help') }}</p>
-                    {!! Form::text('address['.$i.']', null, [ 'class' => 'form-control', 'maxlength' => '1000' ]) !!}
+                    {!! Form::textarea('address['.$i.']', null, [ 'class' => 'form-control' ]) !!}
                 </div>
 
             </div>

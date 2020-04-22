@@ -22,7 +22,7 @@ class CreateClientsTable extends Migration
             $table->string('photo', 60);
             $table->string('phone_text', 15);
             $table->string('phone_int', 10);
-            $table->string('address', 1000);
+            $table->text('address');
             $table->timestamps();
         });
     }

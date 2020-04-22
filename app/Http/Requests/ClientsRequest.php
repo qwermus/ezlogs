@@ -33,9 +33,7 @@ class ClientsRequest extends FormRequest
         }
 
         // Convert license to uppercase
-        foreach ($input['license'] as $key => $value) {
-            $input['license'][$key] = strtoupper($value);
-        }
+        $input['license'] = array_map('strtoupper', $input['license']);
 
         // Replace data
         $this->replace($input);
